@@ -1,0 +1,493 @@
+[
+  {
+    "uri": "features/login.feature",
+    "id": "login",
+    "keyword": "Funcionalidade",
+    "name": "Login",
+    "description": "    Validacao de login com sucesso e falha",
+    "line": 4,
+    "tags": [
+      {
+        "name": "@login",
+        "line": 3
+      }
+    ],
+    "elements": [
+      {
+        "keyword": "Contexto",
+        "name": "",
+        "description": "",
+        "line": 7,
+        "type": "background",
+        "before": [
+          {
+            "match": {
+              "location": "features/support/env.rb:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12105647000
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que estou na tela de login",
+            "line": 8,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2236478000
+            }
+          }
+        ]
+      },
+      {
+        "id": "login;login-com-sucesso",
+        "keyword": "Cenario",
+        "name": "Login com sucesso",
+        "description": "",
+        "line": 10,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@login",
+            "line": 3
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "possuo os seguintes dados \"65467863118\" e \"Teste123\"",
+            "line": 11,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11205484000
+            }
+          },
+          {
+            "keyword": "Quando ",
+            "name": "toco em acessar",
+            "line": 12,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 867756000
+            }
+          },
+          {
+            "keyword": "Então ",
+            "name": "tenho acesso a tela de selecao de cartao",
+            "line": 13,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 124000
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/env.rb:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2459053000
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Contexto",
+        "name": "",
+        "description": "",
+        "line": 7,
+        "type": "background",
+        "before": [
+          {
+            "match": {
+              "location": "features/support/env.rb:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11486730000
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que estou na tela de login",
+            "line": 8,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2805092000
+            }
+          }
+        ]
+      },
+      {
+        "id": "login;usuario-nao-cadastrado;;2",
+        "keyword": "Esquema do Cenario",
+        "name": "Usuario nao cadastrado",
+        "description": "",
+        "line": 22,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@login",
+            "line": 3
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "possuo os seguintes dados \"22846669813\" e \"Teste123\"",
+            "line": 22,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11221476000
+            }
+          },
+          {
+            "keyword": "Quando ",
+            "name": "toco em acessar",
+            "line": 22,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 869672000
+            }
+          },
+          {
+            "keyword": "Então ",
+            "name": "vejo popup com o texto \"Não foi possível autenticar este usuário.\"",
+            "line": 22,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 157000
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/env.rb:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2977610000
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Contexto",
+        "name": "",
+        "description": "",
+        "line": 7,
+        "type": "background",
+        "before": [
+          {
+            "match": {
+              "location": "features/support/env.rb:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11223102000
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que estou na tela de login",
+            "line": 8,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2453120000
+            }
+          }
+        ]
+      },
+      {
+        "id": "login;falha-no-login;;2",
+        "keyword": "Esquema do Cenario",
+        "name": "Falha no login",
+        "description": "",
+        "line": 32,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@login",
+            "line": 3
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "possuo os seguintes dados \"22846669812\" e \"abc\"",
+            "line": 32,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11098218000
+            }
+          },
+          {
+            "keyword": "Quando ",
+            "name": "toco em acessar",
+            "line": 32,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 551728000
+            }
+          },
+          {
+            "keyword": "Entao ",
+            "name": "vejo a \"CPF inválido\"",
+            "line": 32,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 265000
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/env.rb:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2518147000
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Contexto",
+        "name": "",
+        "description": "",
+        "line": 7,
+        "type": "background",
+        "before": [
+          {
+            "match": {
+              "location": "features/support/env.rb:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10006253000
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que estou na tela de login",
+            "line": 8,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3218936000
+            }
+          }
+        ]
+      },
+      {
+        "id": "login;falha-no-login;;3",
+        "keyword": "Esquema do Cenario",
+        "name": "Falha no login",
+        "description": "",
+        "line": 33,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@login",
+            "line": 3
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "possuo os seguintes dados \"\" e \"\"",
+            "line": 33,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11116446000
+            }
+          },
+          {
+            "keyword": "Quando ",
+            "name": "toco em acessar",
+            "line": 33,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 156220000
+            }
+          },
+          {
+            "keyword": "Entao ",
+            "name": "vejo a \"CPF inválido\"",
+            "line": 33,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 490000
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/env.rb:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2767068000
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Contexto",
+        "name": "",
+        "description": "",
+        "line": 7,
+        "type": "background",
+        "before": [
+          {
+            "match": {
+              "location": "features/support/env.rb:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11280893000
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que estou na tela de login",
+            "line": 8,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2142457000
+            }
+          }
+        ]
+      },
+      {
+        "id": "login;falha-no-login;;4",
+        "keyword": "Esquema do Cenario",
+        "name": "Falha no login",
+        "description": "",
+        "line": 34,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@login",
+            "line": 3
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "possuo os seguintes dados \"22846669813\" e \"\"",
+            "line": 34,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12262559000
+            }
+          },
+          {
+            "keyword": "Quando ",
+            "name": "toco em acessar",
+            "line": 34,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3157249000
+            }
+          },
+          {
+            "keyword": "Entao ",
+            "name": "vejo a \"Senha inválida\"",
+            "line": 34,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 111000
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/env.rb:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2481312000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
