@@ -1,4 +1,4 @@
 [caps]
 platformName = "Android"
 deviceName = "emulator-5554"
-app = "/Users/brunomelo/Desktop/MarketGO/marketpayizio-debug.apk"
+app = "/..//Users/brunomelo/Desktop/MarketGO/marketpayizio-debug.apk"
