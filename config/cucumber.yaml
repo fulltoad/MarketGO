@@ -5,7 +5,7 @@ android: PLATFORM=android --exclude features/ios
 
 ios: PLATFORM=ios --exclude features/android
 
-bruno: QA=bruno -f json -o reports/report.json
+bruno: QA=bruno -f html -o reports/report.html
 
 murilo: QA=murilo
 
