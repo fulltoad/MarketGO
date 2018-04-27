@@ -22,8 +22,10 @@ end
   
 Entao("vejo a {string}") do |mensagem|    
     @page_login.find_byXpath mensagem
+    binding.pry
 end
 
 Entao("vejo popup com o texto {string}") do |mensagem|
     @page_login.find_byXpath mensagem
+    binding.pry
 end
