@@ -29,6 +29,8 @@ Funcionalidade: Login
 
         Exemplos:
         | cpf         | senha | mensagem                        |
+        | 2284666981  | abc   | CPF inválido                    |
         | 22846669812 | abc   | CPF inválido                    |
         |             |       | CPF inválido                    |
-        | 22846669813 |       | Senha inválida                  |
+        | 65467863118 |       | Senha inválida                  |
+        | 65467863118 | abc   | Senha inválida                  |
