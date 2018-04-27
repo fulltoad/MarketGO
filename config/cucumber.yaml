@@ -8,3 +8,5 @@ ios: PLATFORM=ios --exclude features/android
 bruno: QA=bruno -f json -o reports/report.json
 
 murilo: QA=murilo
+
+jenkins: QA=jenkins -f json -o reports/report.json
