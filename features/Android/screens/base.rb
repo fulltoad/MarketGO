@@ -21,6 +21,10 @@ class BaseScreen
         end
     end
 
+    def find_element_id (id)
+        text = $driver.find_element(:id, id)
+    end
+
     def find_elements_byXpath (text)
         $driver.wait_true(5) {$driver.exists {$driver.find_element(:name => /^#{text}/)}}
     end
