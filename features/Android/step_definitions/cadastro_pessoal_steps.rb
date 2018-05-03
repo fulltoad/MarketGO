@@ -35,5 +35,6 @@ Entao("sou direcionado para tela de dados residenciais") do
 end
   
 Entao("visualizo mensagem de {string}") do |mensagem|
-    @page_cad.find_byXpath mensagem
+    alert = @page_cad.find_id 'textinput_error'
+    expect(alert.text).to eql mensagem
 end

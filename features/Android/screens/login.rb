@@ -16,4 +16,7 @@ class Login < BaseScreen
         @alert = find_elements_byXpath msg
     end
 
+    def find_id (id)
+        find_element_id (id)
+    end
 end
