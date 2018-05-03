@@ -1,8 +1,8 @@
 #language:pt
 
-@login
 Funcionalidade: Login
     Validacao de login com sucesso e falha
+    Acesso a opcao de cadastro e esqueci minha senha
 
     Contexto:
         Dado que estou na tela de login
@@ -21,7 +21,6 @@ Funcionalidade: Login
         | mensagem                                  |
         | Não foi possível autenticar este usuário. |
 
-
     Esquema do Cenario: Falha no login
         Dado possuo os seguintes dados "<cpf>" e "<senha>"
         Quando toco em acessar
@@ -34,3 +33,11 @@ Funcionalidade: Login
         |             |       | CPF inválido   |
         | 65467863118 |       | Senha inválida |
         | 65467863118 | abc   | Senha inválida |
+
+    Cenario: Acesso a Esqueci minha senha
+        Quando que toco em Esqueci minha senha
+        Entao sou direcionado para tela de recuperacao de senha
+
+    Cenario: Acesso a cadastro
+        Quando toco em Cadastrar
+        Entao sou direcionado para tela de cadastro
