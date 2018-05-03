@@ -21,9 +21,29 @@ Quando("toco em acessar") do
 end
   
 Entao("vejo a {string}") do |mensagem|    
-    @page_login.find_byXpath mensagem
+    alert = @page_login.find_id 'textinput_error'
+    expect(alert.text).to eql mensagem
 end
 
 Entao("vejo popup com o texto {string}") do |mensagem|
-    @page_login.find_byXpath mensagem
+    alert = @page_login.find_id 'message'
+    expect(alert.text).to eql mensagem
+end
+
+Quando("que toco em Esqueci minha senha") do
+    @page_login.click ('main_forgot_pass_bt')
+end
+  
+Entao("sou direcionado para tela de recuperacao de senha") do
+    @page_senha = Esqueci_senha.new
+    @page_senha.screen
+end
+
+Quando("toco em Cadastrar") do
+    @page_login.click ('bt_register') 
+end
+  
+Entao("sou direcionado para tela de cadastro") do
+    @page_cad = Cadastro_Pessoal.new
+    @page_cad.screen
 end
