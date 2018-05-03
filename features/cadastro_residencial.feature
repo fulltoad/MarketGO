@@ -1,6 +1,7 @@
 #language:pt
 
     Funcionalidade: Cadastro Dados Residencial
+        Sendo cliente, desejo cadastrar meus dados residenciais para ter acesso ao aplicativo
 
     Contexto:
         Dado que estou na tela de dados residenciais
@@ -18,8 +19,7 @@
 
 
     Esquema do Cenario: Cadastro dados residencial com falha
-        Dado que estou na tela de dados residenciais
-        E que tenho os dados "<cep>" e "<nome_rua>"
+        Dado que tenho os dados "<cep>" e "<nome_rua>"
         E "<numero>" e "<complemento>"
         E "<cidade>", "<estado>" e "<bairro>"
         Quando toco em avancar
