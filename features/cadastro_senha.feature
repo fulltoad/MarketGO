@@ -1,6 +1,7 @@
 #language:pt
 
 Funcionalidade: Cadastro Senha
+    Sendo cliente, desejo cadastrar meus minha senha para ter acesso ao aplicativo
 
 Contexto:
     Dado que estou na tela de cadastro de Senha
