@@ -14,6 +14,7 @@ class BaseScreen
 
     def send_keys_id text_field, text
         t = $driver.find_element(:id, text_field)
+        
         t.send_keys(text)
         
         if $driver.is_keyboard_shown
@@ -31,6 +32,10 @@ class BaseScreen
 
     def hide_keyboard
         $driver.hide_keyboard()
+    end
+
+    def swipe_down
+        $driver.swipe start_x: 400, start_y: 1200, offset_x: 400, offset_y: 400
     end
 
 end
