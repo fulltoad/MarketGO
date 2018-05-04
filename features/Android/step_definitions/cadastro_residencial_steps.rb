@@ -19,6 +19,22 @@ E("informo o {string}") do |numero|
     @page_cad_res.scroll
 end
 
+E("{string} com {string}") do |numero, complemento|
+    @page_cad_res.send 'register_numero_et', numero
+    @page_cad_res.send 'register_complemento_et', complemento
+end
+
+Dado("que tenho os dados residenciais {string} e {string}") do |cep, nome_rua|
+    @page_cad_res.send 'register_cep_et', cep
+    @page_cad_res.send 'register_endereco_et', nome_rua
+end
+
+Dado("tambem {string}, {string} e {string}") do |cidade, estado, bairro|
+    @page_cad_res.send 'register_estado_et', estado
+    @page_cad_res.send 'register_cidade_et', cidade
+    @page_cad_res.send 'register_bairro_et', bairro
+end
+
 Quando("toco em continuar") do 
     @page_cad_res.click ('bt_next_password')
 end
