@@ -17,12 +17,8 @@ end
 #end
 
 After do |scenario |
+    #sleep 1
     #file_name = "screenshot_#{Time.now.strftime('%Y%m%d%H%M%S%')}.png"
     #$driver.screenshot(File.join("/Users/brunomelo/Desktop/MarketGO/screenshots", file_name))
     $driver.driver_quit
 end
-
-#$driver.start_driver
-
-#$driver.driver_quit
-
