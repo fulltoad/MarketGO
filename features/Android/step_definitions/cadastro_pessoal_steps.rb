@@ -17,8 +17,8 @@ Dado("{string} e {string}") do |email, confirm_email|
 end
 
 Dado("tambem {string} e {string}") do |data, cel|
-    @page_cad.send 'register_birthday_et', data
     @page_cad.send 'register_cellphone_et', cel
+    @page_cad.send 'register_birthday_et', data
 end
   
 Dado("{string}") do |sexo|
