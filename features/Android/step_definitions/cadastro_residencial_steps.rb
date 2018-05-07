@@ -4,13 +4,14 @@ require 'faker'
 
 cpf = Faker::CPF.numeric
 email = Faker::GameOfThrones.house + Faker::GameOfThrones.city + "@" + Faker::GameOfThrones.dragon + ".com"
+celular = "119" + Faker::Number.number(8)
 binding.pry
 
 Dado("que estou na tela de dados residenciais") do
     steps (%"E que estou na tela de Cadastro Dados Pessoais
-        E que tenho os dados '<#{cpf}>' e '<#{email}>'
-        E '<brunode.melo@test.com>' e '<brunode.melo@test.com>'
-        E tambem '<01081986>' e '<11985559970>'
+        E que tenho os dados '<#{cpf}>' e '<Bruno Melo>'
+        E '<#{email}>' e '<#{email}>'
+        E tambem '<01081986>' e '<#{celular}>'
         E 'Masculino'
         E toco em avancar")
 
