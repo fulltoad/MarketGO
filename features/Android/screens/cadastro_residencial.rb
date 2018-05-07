@@ -19,8 +19,7 @@ class Cadastro_Residencial < BaseScreen
         swipe_down
     end
 
-    def tab (field_id)
-        send_keys_id field_id, ':tab'
-
+    def clear (id)
+        clear_field (id)
     end
 end
