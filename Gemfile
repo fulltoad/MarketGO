@@ -8,3 +8,5 @@ gem "appium_lib"
 gem "appium_console"
 gem "pry"
 gem "rspec"
+gem "cpf_faker"
+gem 'faker'
