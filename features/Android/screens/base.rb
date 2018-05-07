@@ -38,4 +38,7 @@ class BaseScreen
         $driver.swipe start_x: 400, start_y: 1200, offset_x: 400, offset_y: 400
     end
 
+    def clear_field (text_field)
+        $driver.find_element(:id, text_field).clear
+    end
 end
