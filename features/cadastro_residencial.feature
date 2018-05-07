@@ -26,10 +26,13 @@
         Entao visualizo mensagem de "<alerta>"
 
         Exemplos:
-        | cep      | nome_rua        | numero | complemento | cidade    | estado | bairro             | alerta            |
-        |          | Rua dos aniquis | 213    | Ap 20       | Sao Paulo | SP     | Jd Santa Terezinha | CEP inválido.      |
-#        | 0447400  | Rua dos aniquis | 213    | Ap 20       | Sao Paulo | SP     | Jd Santa Terezinha | CEP inválido.      |
-#        | 04474000 |                 | 213    | Ap 20       | Sao Paulo | SP     | Jd Santa Terezinha | Rua inválido.      |
-#        | 04474000 | Rua             | 213    | Ap 20       | Sao Paulo | SP     | Jd Santa Terezinha | Rua inválido.      |
-#        | 04474000 | Rua dos aniquis |        | Ap 20       | Sao Paulo | SP     | Jd Santa Terezinha | Numero inválido.   |
-#        | 04474000 | Rua dos aniquis | 213    | Ap 20       | Sao Paulo | SP     | Jd Santa Terezinha |      |
+        | cep      | nome_rua        | numero | complemento | cidade    | estado | bairro             | alerta             |
+        |          | Rua dos aniquis | 210    | Ap 20       | São Paulo | SP     | Jd Santa Terezinha | CEP inválido.      |
+        | 0447400  | Rua dos aniquis | 210    | Ap 20       | São Paulo | SP     | Jd Santa Terezinha | CEP inválido.      |
+        | 04474000 |                 | 210    | Ap 20       | São Paulo | SP     | Jd Santa Terezinha | Rua inválida.      |
+        | 04474000 | Rua             | 210    | Ap 20       | São Paulo | SP     | Jd Santa Terezinha | Rua inválida.      |
+        | 04474000 | Rua dos aniquis |        | Ap 20       | São Paulo | SP     | Jd Santa Terezinha | Número inválido.   |
+        | 04474000 | Rua dos aniquis | 210    | Ap 20       |           | SP     | Jd Santa Terezinha | Cidade inválido.   |
+        | 04474000 | Rua dos aniquis | 210    | Ap 20       | São Paulo | AA     | Jd Santa Terezinha | Estado inválido.   |
+        | 04474000 | Rua dos aniquis | 210    | Ap 20       | São Paulo |        | Jd Santa Terezinha | Estado inválido.   |
+        | 04474000 | Rua dos aniquis | 210    | Ap 20       | São Paulo | SP     |                    | Bairro inválido.   |
