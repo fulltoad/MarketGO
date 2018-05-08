@@ -1,11 +1,11 @@
 # config/cucumber.yml
 ##YAML Template
 
-android: PLATFORM=android --exclude features/ios
+android: PLATFORM=android --exclude features/iOS
 
-ios: PLATFORM=ios --exclude features/android
+ios: PLATFORM=ios --exclude features/Android
 
-bruno: QA=bruno -f html -o reports/report.html
+bruno: QA=bruno ###-f html -o reports/report.html
 
 murilo: QA=murilo
 
