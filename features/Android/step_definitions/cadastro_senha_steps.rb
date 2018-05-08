@@ -2,7 +2,7 @@ require 'cpf_faker'
 require 'faker'
 
 email = Faker::Superhero.prefix + "_" + Faker::Number.number(3) + "@" + Faker::GameOfThrones.dragon + ".com"
-email.gsub(" ", "_").downcase!
+email.downcase!
 celular = "119" + Faker::Number.number(8)
     
 Dado("que estou na tela de cadastro de Senha") do
