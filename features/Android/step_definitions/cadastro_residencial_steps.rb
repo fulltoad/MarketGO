@@ -4,8 +4,8 @@ require 'faker'
 
 cpf = Faker::CPF.numeric
 email = Faker::GameOfThrones.house + Faker::GameOfThrones.city + "@" + Faker::GameOfThrones.dragon + ".com"
+email.downcase!
 celular = "119" + Faker::Number.number(8)
-binding.pry
 
 Dado("que estou na tela de dados residenciais") do
     steps (%"E que estou na tela de Cadastro Dados Pessoais
