@@ -12,7 +12,7 @@ Dado("possuo os seguintes dados {string} e {string}") do |cpf, senha|
 end
 
 Então("tenho acesso a tela de selecao de cartao") do
-    @page_card = Select_Card.new
+    @page_card = Seleciona_Cartao.new
     @page_card.screen
 end
   
