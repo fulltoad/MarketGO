@@ -2,3 +2,4 @@
 platformName = "Android"
 deviceName = "emulator-5554"
 app = "/Users/brunomelo/Desktop/MarketGO/marketpayizio-debug.apk"
+appPackage = "br.com.finners.marketpay"
