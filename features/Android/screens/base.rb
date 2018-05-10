@@ -8,8 +8,7 @@ class BaseScreen
     end
 
     def button_click_id (button_id)
-        b = $driver.find_element(:id, button_id)
-        b.click 
+        b = $driver.find_element(:id, button_id).click
     end
 
     def send_keys_id text_field, text
@@ -41,4 +40,5 @@ class BaseScreen
     def clear_field (text_field)
         $driver.find_element(:id, text_field).clear
     end
+
 end
