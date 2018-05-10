@@ -41,3 +41,18 @@ Funcionalidade: Login
     Cenario: Acesso a cadastro
         Quando toco em Cadastrar
         Entao sou direcionado para tela de cadastro
+
+    Cenario: Logout na tela de selecao de cartao
+        Dado que fiz o login com "<cpf>" e "<senha>"
+        E estou na tela selecao de cartao
+        Quando toco em sair
+        Entao sou direcionado para tela de login
+
+    Cenario: Logout na tela de Ajustes
+        Dado que fiz o login com "<cpf>" e "<senha>"
+        E estou na tela selecao de cartao
+        E seleciono o cartao ja cadastrado
+        Quando acesso tela de ajustes
+        E toco em sair
+        E confirmo a saida da conta
+        Entao sou direcionado para tela de login
