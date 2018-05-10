@@ -10,11 +10,11 @@ Appium:: Driver.new caps, true
 
 Before do |scenario|
     $driver.start_driver
+
+    $driver.remove_app "br.com.finners.marketpay"
+
+    $driver.launch_app
 end
-
-#Before do |scenario|
-
-#end
 
 After do |scenario |
     #sleep 1
