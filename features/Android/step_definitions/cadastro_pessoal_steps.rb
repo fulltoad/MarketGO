@@ -1,6 +1,6 @@
 Dado("que estou na tela de Cadastro Dados Pessoais") do
     steps (%"E que estou na tela inicial
-             E clico em cadastre-se")
+            E clico em cadastre-se")
 
     @page_cad = Cadastro_Pessoal.new
     @page_cad.screen

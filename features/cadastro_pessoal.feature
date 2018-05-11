@@ -3,10 +3,8 @@
 Funcionalidade: Cadastro 
         Sendo cliente, desejo cadastrar meus dados pessoais para ter acesso ao aplicativo
 
-    Contexto:
-        Dado que estou na tela de Cadastro Dados Pessoais
-
     Esquema do Cenario: Cadastro dados pessoais com sucesso
+        Dado que estou na tela de Cadastro Dados Pessoais
         Dado que tenho os dados "<cpf>" e "<nome_completo>"
         E "<email>" e "<confirmacao_email>"
         E tambem "<data_nascimento>" e "<cel>"
@@ -19,6 +17,7 @@ Funcionalidade: Cadastro
         | 22846669813 | bruno melo    | brunom@teste.com | brunom@teste.com  | 01081986        | 11985559970 | Feminino  |
 
     Esquema do Cenario: Cadastro dados pessoais com falha
+        Dado que estou na tela de Cadastro Dados Pessoais
         Dado que tenho os dados "<cpf>" e "<nome_completo>"
         E "<email>" e "<confirmacao_email>"
         E tambem "<data_nascimento>" e "<cel>"
@@ -51,3 +50,8 @@ Funcionalidade: Cadastro
         | 22846669813 | bruno melo    | brunom@teste.com | brunom@teste.com  | 01081986        | 11185559970 | Masculino | Celular inválido    |
         | 22846669813 | bruno melo    | brunom@teste.com | brunom@teste.com  | 01081986        | 1198555997  | Masculino | Celular inválido    |
         | 22846669813 | bruno melo    | brunom@teste.com | brunom@teste.com  | 01081986        |             | Masculino | Celular inválido    |
+
+        Cenario: Acesso a cadastro
+            Dado que estou na tela de login
+            Quando toco em Cadastrar
+            Entao sou direcionado para tela de cadastro

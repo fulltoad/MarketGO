@@ -12,7 +12,7 @@ Dado("clico em cadastre-se") do
 end
   
 Entao("sou direcionado para tela cadastro") do
-    @page_cad = Cadastro.new
+    @page_cad = Cadastro_Pessoal.new
     @page_cad.screen
 end
   

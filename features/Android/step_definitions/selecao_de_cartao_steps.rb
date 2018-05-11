@@ -3,10 +3,8 @@ Dado("que fiz o login") do
         E possuo os seguintes dados '<65467863118>' e 'Teste123'
         E toco em acessar")
         
-        @pag_sel_cartao = Seleciona_Cartao.new
-        @pag_sel_cartao.screen
-
-        binding.pry
+    @pag_sel_cartao = Seleciona_Cartao.new
+    @pag_sel_cartao.screen
 end
   
 Entao("visualizo meu cartao cadastrado") do
@@ -15,9 +13,6 @@ end
   
 Quando("seleciono o cartao") do
     pending # Write code here that turns the phrase above into concrete actions
-    #Ajustar para clicar no 1o da lista
-
-    # row_select_card_container
 end
   
 Quando("sou direcionado para a home") do
