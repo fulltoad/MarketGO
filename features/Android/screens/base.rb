@@ -17,7 +17,7 @@ class BaseScreen
         t.send_keys(text)
         
         if $driver.is_keyboard_shown
-            hide_keyboard
+            $driver.hide_keyboard()
         end
     end
 
