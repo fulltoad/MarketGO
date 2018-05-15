@@ -38,12 +38,43 @@ Entao("sou direcionado para tela de recuperacao de senha") do
     @page_senha = Esqueci_senha.new
     @page_senha.screen
 end
-
-Quando("toco em Cadastrar") do
-    @page_login.click ('bt_register') 
-end
   
 Entao("sou direcionado para tela de cadastro") do
     @page_cad = Cadastro_Pessoal.new
     @page_cad.screen
 end
+
+Dado("que fiz o login com {string} e {string}") do |cpf, senha|
+
+    steps (%"E possuo os seguintes dados '<#{cpf}>' e '#{senha}'
+        E toco em acessar")
+end
+  
+Dado("estou na tela selecao de cartao") do
+    @page_card.screen
+end
+  
+Quando("toco em sair") do
+    @page_card.click 'menu_card_phone'
+end
+  
+Entao("sou direcionado para tela de login") do
+    @page_login.screen
+end
+  
+#Dado("seleciono o cartao ja cadastrado") do
+#    pending # Write code here that turns the phrase above into concrete actions
+#end
+  
+#Quando("acesso tela de ajustes") do
+#    pending # Write code here that turns the phrase above into concrete actions
+#end
+  
+Quando("confirmo a saida da conta") do
+    pending # Write code here that turns the phrase above into concrete actions
+#   alertTitle = Sair
+#   message = Tem certeza que deseja sair?
+#   button1 = Sim
+#   button2 = Não
+end
+  

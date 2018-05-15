@@ -5,7 +5,7 @@ Dado("que estou na tela de Cadastro Dados Pessoais") do
     @page_cad = Cadastro_Pessoal.new
     @page_cad.screen
 end
-  
+
 Dado("que tenho os dados {string} e {string}") do |cpf, nome|
     @page_cad.send 'register_cpf_et', cpf
     @page_cad.send 'register_name_et', nome
@@ -37,4 +37,12 @@ end
 Entao("visualizo mensagem de {string}") do |mensagem|
     alert = @page_cad.find_id 'textinput_error'
     expect(alert.text).to eql mensagem
+end
+
+Quando("toco em Cadastrar") do
+    @page_login.click ('bt_register') 
+end
+
+Entao("sou direcionado para tela de cadastro") do
+    @page_cad.screen
 end

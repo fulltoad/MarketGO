@@ -18,7 +18,9 @@ end
 
 After do |scenario |
     #sleep 1
-    #file_name = "screenshot_#{Time.now.strftime('%Y%m%d%H%M%S%')}.png"
-    #$driver.screenshot(File.join("/Users/brunomelo/Desktop/MarketGO/screenshots", file_name))
+    #file_name = "#{scenario.name.tr(' ', '_').downcase!}_#{Time.now.strftime('%Y_%m_%d_%H_%M_%S')}.png"
+    #img = $driver.screenshot(File.join("/Users/brunomelo/Desktop/MarketGO/screenshots", file_name))
+    #embed(img, 'image/png', 'Clique aqui para ver a evidência!')
+
     $driver.driver_quit
 end
